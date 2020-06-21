@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  showDiv: boolean;
+  showDiv: boolean
+  searchTerm: any
+  router: Router
 
-  constructor() {
-    this.showDiv = false;
+  constructor(router: Router) {
+    this.router = router
+    this.showDiv = false
    }
 
   dropdownMenu(){
@@ -18,4 +22,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchGithub(form){    
+    this.searchTerm = form.value.searchTerm
+    form.resetForm()
+    this.router.navigate(['/home', this.searchTerm])
+        
+  }
 }

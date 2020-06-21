@@ -12,13 +12,17 @@ export class HomeComponent implements OnInit {
   constructor(private githubService: GithubService) { }
 
   ngOnInit(): void {
-  this.githubService.getUser()
-  .then((data)=>{
-    this.user = data
-    console.log(this.user)
-  })
-  .catch((err)=>{
-    this.user = err
-  })
+
+    this.pullUser();
+    
+
+  }
+  async pullUser(){
+    try{
+      this.user = await this.githubService.getUser('GrishonNganga')
+    }catch(err){
+      this.user = err
+    }
+    
   }
 }

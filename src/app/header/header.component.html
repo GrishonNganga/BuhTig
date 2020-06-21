@@ -4,8 +4,8 @@
             <a class="navbar-brand" href="#"><img src="../../assets/blu-logo.png" alt=""></a>
         </div>
         <div class="col col-sm-4">
-            <form>
-                <input class="form-control nav-search-lg mt-2" type="search" placeholder="Search" aria-label="Search">
+            <form #searchGithubForm='ngForm'>
+                <input name='searchTerm'(keyup.enter)='searchGithub(searchGithubForm)' class="form-control nav-search-lg mt-2" type="text" placeholder="Search" aria-label="Search" ngModel>
             </form>
         </div>
     </div>
