@@ -28,8 +28,9 @@ ul li{
     flex: 0 0 100%;
     max-width: 100%;
 }
-.profile-icon{
-    font-size: 300px;
+img, .profile-icon{
+    width: 300px;
+    border-radius: 50%;
     background-color: white;   
     margin-left: 10%;
     
