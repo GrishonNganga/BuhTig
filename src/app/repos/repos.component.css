@@ -1,0 +1,35 @@
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: initial;
+}
+a:hover{
+    border-bottom: 1.5px solid lightgray;
+    padding-bottom: 4px;
+}
+ul{
+    list-style: none;
+    float: right;
+}
+ul li{
+    text-decoration: none;
+    display: inline;
+    margin-right: 20px;   
+}
+.repos-title{
+    text-align: center;
+    font-size: 24px;
+}
+.tech, .stars, .home-icon, .book-icon{
+    font-size: 16px;
+    vertical-align: middle;
+    color: #133770;
+}
+
+@media screen and (min-width: 768px){
+    .repos-title{
+        text-align: center;
+        font-size: 36px;
+    }
+}
