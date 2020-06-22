@@ -25,6 +25,10 @@ ul li{
     color: #133770;
     cursor: pointer;
 }
+.home-select{
+    padding-bottom: 3%;
+    border-bottom: 1px solid #eb7222;
+}
 .body-div{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;

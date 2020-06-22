@@ -35,7 +35,10 @@ ul li{
 .home-icon, .book-icon{
     cursor: pointer;
 }
-
+.repos-select{
+    padding-bottom: 3%;
+    border-bottom: 1px solid #eb7222;
+}
 .nada img{
     width: 50%;
     margin-left: 25%;
