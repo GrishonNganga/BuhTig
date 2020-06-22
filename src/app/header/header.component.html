@@ -1,11 +1,11 @@
 <nav class="navbar bg-navy-blue">
     <div class="row navbar-lg">
         <div class="col col-sm-1">
-            <a class="navbar-brand" href="#"><img src="../../assets/blu-logo.png" alt=""></a>
+            <a class="navbar-brand" href="home"><img src="../../assets/blu-logo.png" alt=""></a>
         </div>
         <div class="col col-sm-4">
             <form #searchGithubForm='ngForm'>
-                <input name='searchTerm'(keyup.enter)='searchGithub(searchGithubForm)' class="form-control nav-search-lg mt-2" type="text" placeholder="Search" aria-label="Search" ngModel>
+                <input name='searchTerm'(keyup.enter)='searchGithub(searchGithubForm)' class="form-control nav-search-lg mt-2" type="text" placeholder="Search for user" aria-label="Search" ngModel>
             </form>
         </div>
     </div>

@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ReposComponent } from './repos/repos.component';
-import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { UserComponent } from './user/user.component';
     HeaderComponent,
     HomeComponent,
     ReposComponent,
-    UserComponent
   ],
   imports: [
     BrowserModule,
