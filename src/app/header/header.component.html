@@ -5,7 +5,7 @@
         </div>
         <div class="col col-sm-4">
             <form #searchGithubForm='ngForm'>
-                <input name='searchTerm'(keyup.enter)='searchGithub(searchGithubForm)' class="form-control nav-search-lg mt-2" type="text" placeholder="Search for user" aria-label="Search" ngModel>
+                <input name='searchTerm'(keyup.enter)='searchGithub(searchGithubForm)' class="form-control nav-search-lg mt-2" type="text" placeholder="{{searchText}}" aria-label="Search" ngModel>
             </form>
         </div>
     </div>

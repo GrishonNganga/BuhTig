@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   router: Router
   mySubscription: any;
   private url: string
+  searchText: string;
 
   constructor(router: Router, private githubService: GithubService) {
     this.router = router
@@ -24,9 +25,11 @@ export class HeaderComponent implements OnInit {
     };
     this.mySubscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Trick the Router into believing it's last link wasn't previously loaded
         this.router.navigated = false;
         this.url = event.url
+        console.log(this.url)
+        this.setSearchText()
+        
       }
     });
    }
@@ -35,8 +38,8 @@ export class HeaderComponent implements OnInit {
     this.showDiv = !this.showDiv
   }
   ngOnInit(): void {
+    
   }
-
   searchGithub(form){    
     this.searchTerm = form.value.searchTerm
     form.resetForm()
@@ -49,6 +52,14 @@ export class HeaderComponent implements OnInit {
       this.githubService.setSearchedRepoTerm(this.searchTerm)
       this.router.navigate(['/repositories'])
     }
-        
+  }
+
+  setSearchText(){
+    console.log(`This is the urL! ${this.url}`)
+    if(this.url == '/home'){
+      this.searchText = 'Search for user'
+    }else{
+      this.searchText = 'Search for repository'
+    }
   }
 }
