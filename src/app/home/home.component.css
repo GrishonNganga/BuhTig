@@ -54,6 +54,25 @@ img, .profile-icon{
     font-size: 24px;
     vertical-align: middle;
 }
+.nada img{
+    width: 50%;
+    margin-left: 25%;
+}
+.nada p{
+    text-align: center;
+    font-size: 24px;
+    color: #133770 ;
+}
+.btn-success{
+    background-color: #133770;
+    border-color: #133770;
+    color: white;
+    margin-left: 40%;
+}
+.btn-success a:hover{
+    text-decoration: none;
+    color: white;
+}
 
 @media screen and (min-width: 768px){
     .body-div{
@@ -87,6 +106,19 @@ img, .profile-icon{
         margin-left: 15%;
         padding-bottom: 15%;
 
+    }
+
+    .btn-success{
+        background-color: #133770;
+        border-color: #133770;
+        color: white;
+        margin-left: 45%;
+    }
+    .btn-success a:hover{
+        text-decoration: none;
+        color: white;
+        color: #193c73;
+    
     }
     
     

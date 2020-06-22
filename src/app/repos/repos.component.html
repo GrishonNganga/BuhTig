@@ -13,7 +13,7 @@
             <div class="ml-4 mr-4 mb-4 col-10 col-sm-5" *ngFor='let repo of repos'>
                 <div class="card">
                     <div class="row ml-3 mt-3">
-                        <div class="col">
+                        <div class="col repo-name">
                             {{repo.name}}
                         </div>
                     </div>
@@ -34,13 +34,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>       
 
         <div class="repos-title mt-3 mt-sm-0" *ngIf='repository'>
             <p>Repositories found</p>
 
         </div>
-        <div class="row ml-1 ml-sm-0" *ngIf='repository'>
+        <div class="row ml-1 ml-sm-0" *ngIf='repository;'>
             <div class="ml-4 mr-4 mb-4 col-10 col-sm-5">
                 <div class="card">
                     <div class="row ml-3 mt-3">
@@ -65,7 +65,20 @@
                     </div>
                 </div>
             </div>
+        </div>   
+        <div *ngIf='repos == undefined'>
+            <div class="nada" *ngIf='!repository'>
+                <p>No Results found here</p>
+                <img src="../../assets/nada.svg" alt="">
+                <div>
+                    <a href="/repositories">
+                        <button class="btn btn-success">Go Home</button>
+                     </a>
+                </div>
+            </div>
         </div>
+            
+        
         
     </div>
 </div>
