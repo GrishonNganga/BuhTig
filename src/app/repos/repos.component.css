@@ -1,5 +1,6 @@
 .title a{
     text-decoration: none;
+    cursor: pointer;
 }
 .title a:visited{
     color: initial;
@@ -31,6 +32,10 @@ ul li{
     vertical-align: middle;
     color: #133770;
 }
+.home-icon, .book-icon{
+    cursor: pointer;
+}
+
 .nada img{
     width: 50%;
     margin-left: 25%;

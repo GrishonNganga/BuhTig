@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ReposComponent } from './repos/repos.component';
+import { SelectedDirective } from './selected.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReposComponent } from './repos/repos.component';
     HeaderComponent,
     HomeComponent,
     ReposComponent,
+    SelectedDirective,
   ],
   imports: [
     BrowserModule,

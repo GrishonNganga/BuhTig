@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { GithubService } from '../github/github.service';
 
+import { Repo } from '../repo'
 @Component({
   selector: 'app-repos',
   templateUrl: './repos.component.html',
@@ -12,7 +13,7 @@ export class ReposComponent implements OnInit {
   reposLink: string  
   repos
   repository
-  constructor(private githubService: GithubService,private router: Router ) { }
+  constructor(private githubService: GithubService,private router: Router) { }
 
   ngOnInit(): void {
     if(this.githubService.getSearchedRepoTerm() == undefined){

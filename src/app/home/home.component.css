@@ -7,6 +7,7 @@ a:visited{
 a:hover{
     border-bottom: 1.5px solid lightgray;
     padding-bottom: 4px;
+    cursor: pointer;
 }
 ul{
     list-style: none;
@@ -22,6 +23,7 @@ ul li{
     font-size: 16px;
     vertical-align: middle;
     color: #133770;
+    cursor: pointer;
 }
 .body-div{
     -ms-flex: 0 0 100%;
@@ -46,13 +48,19 @@ img, .profile-icon{
     margin-bottom: 2.5%;
 }
 .people{
-    margin-left: 2.5%;
+    margin-left: .5%;
     font-size: 16px;
     padding-bottom: 5%;
 }
-.people-icon, .person-icon{
+.people-icon, .person-icon, .business-icon{
     font-size: 24px;
     vertical-align: middle;
+}
+.small-txt{
+    font-size: 15px;
+}
+.nada{
+    margin-top: 30%;
 }
 .nada img{
     width: 50%;
@@ -67,7 +75,8 @@ img, .profile-icon{
     background-color: #133770;
     border-color: #133770;
     color: white;
-    margin-left: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
 }
 .btn-success a:hover{
     text-decoration: none;
@@ -75,6 +84,9 @@ img, .profile-icon{
 }
 
 @media screen and (min-width: 768px){
+    .small-txt{
+        font-size: 18px;
+    }
     .body-div{
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -113,12 +125,16 @@ img, .profile-icon{
         border-color: #133770;
         color: white;
         margin-left: 45%;
+        margin-top: 5%;
     }
     .btn-success a:hover{
         text-decoration: none;
         color: white;
         color: #193c73;
     
+    }
+    .nada{
+        margin-top: 15%;
     }
     
     
