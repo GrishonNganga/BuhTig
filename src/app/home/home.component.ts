@@ -21,9 +21,7 @@ export class HomeComponent implements OnInit {
       this.getDefaultUser()
     }else{
       this.getSearchedUser() 
-      
-    }
-    
+    }  
   }
 
   async getDefaultUser(){
@@ -44,7 +42,6 @@ export class HomeComponent implements OnInit {
       this.user = err
       console.log(this.user)
     }
-    
   }
 
   navigateHome(){
