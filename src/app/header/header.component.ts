@@ -37,9 +37,8 @@ export class HeaderComponent implements OnInit {
   dropdownMenu(){
     this.showDiv = !this.showDiv
   }
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void { }
+  
   searchGithub(form){    
     this.searchTerm = form.value.searchTerm
     form.resetForm()
