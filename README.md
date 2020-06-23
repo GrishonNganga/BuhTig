@@ -6,7 +6,7 @@ This application makes it easy to find users and repositories on Github.
 
 ## Description
 
-This application allows a user to search for a Github's user and or repositories by using Github's API.
+This application allows a user to search for a Github's user and or repositories by using Github's API. A user first sees my Github account on the `/home` page and repositories listed on the `/repositories` page. The user can serach for a user or repo on the search bar up top. With one caveat however. ~Being on the homepage one can search for users only, and being on the repositories pagas well can only search for repositories.
 
 ## Setup/Installation Requirements
 
@@ -38,12 +38,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
 ## Known Bugs
 {Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
 ## Technologies Used
